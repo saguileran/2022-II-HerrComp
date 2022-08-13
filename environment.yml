@@ -1,0 +1,29 @@
+name: herrcomp
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9.13
+  - numpy
+  - matplotlib
+  - superlu_dist=6.2.0
+  - rise
+  - scipy
+  - seaborn
+  - jupyterlab-lsp
+  - python-lsp-server
+  - ipywidgets
+  - jupyter_contrib_nbextensions
+  - pandas
+  - pulp
+  - bokeh
+  - ipyvolume
+  - plotly
+  - vpython
+  - jupyterlab-vpython
+#  - fenics
+#  - mshr
+  - nbtutor
+  - pip
+  - pip:
+    - nbgrader
+    - tutormagic
