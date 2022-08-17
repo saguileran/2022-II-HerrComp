@@ -1,2 +1,4 @@
 *.DS_Store
 */auto
+*ipynb_checkpoints
+*__pycache__
