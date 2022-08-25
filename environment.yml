@@ -1,28 +1,30 @@
-name: herrcomp
+name: herrcomp2
 channels:
   - conda-forge
 dependencies:
-  - python=3.9.13
+  - python
   - numpy
   - matplotlib
-  - superlu_dist=6.2.0
-  - rise
   - scipy
   - seaborn
+  - jupyter
+ # - superlu_dist=6.2.0
+  - rise
   - jupyterlab-lsp
   - python-lsp-server
   - ipywidgets
   - jupyter_contrib_nbextensions
+  - jupyter_nbextensions_configurator
   - pandas
-  - pulp
-  - bokeh
-  - ipyvolume
-  - plotly
+#  - pulp
+#  - bokeh
+#  - ipyvolume
+#  - plotly
   - vpython
   - jupyterlab-vpython
 #  - fenics
 #  - mshr
-  - nbtutor
+#  - nbtutor
   - pip
   - pip:
     - nbgrader

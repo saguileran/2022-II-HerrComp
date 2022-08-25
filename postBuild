@@ -1,24 +1,63 @@
-jupyter contrib nbextension install --user
+#jupyter contrib nbextension install # --user
+jupyter contrib nbextension install --sys-prefix
 jupyter nbextension enable --py widgetsnbextension
 jupyter nbextension enable python-markdown/main
 jupyter nbextension enable rise/main
 jupyter nbextension enable toc2/main
-jupyter nbextension enable ExecuteTime/main
+jupyter nbextension enable equation-numbering/main
 jupyter nbextension enable execute_time/ExecuteTime
 jupyter nbextension enable toggle_all_line_numbers/main
 jupyter nbextension enable varInspector/main
 jupyter nbextension enable codefolding/main
 jupyter nbextension enable exercise2/main
-jupyter nbextension enable code_prettify/code_prettify
+jupyter nbextension enable code_prettify/autopep8
 jupyter nbextension enable collapsible_headings/main
 jupyter nbextension enable equation-numbering/main
+jupyter nbextension enable spellchecker/main
 
-jupyter nbextension install --sys-prefix --py nbgrader --overwrite
-jupyter nbextension enable --sys-prefix --py nbgrader
-jupyter serverextension enable --sys-prefix --py nbgrader
+########################################
+# nbgrader
+# pip install nbgrader
 
-jupyter nbextension install --overwrite --py nbtutor
-jupyter nbextension enable --py nbtutor
+jupyter labextension enable --level=sys_prefix nbgrader
+jupyter server extension enable --sys-prefix --py nbgrader
+jupyter contrib nbextension install --sys-prefix
+
+# jupyter server extension enable nbgrader.server_extensions.formgrader
+# jupyter server extension enable nbgrader.server_extensions.assignment_list
+# jupyter server extension enable nbgrader.server_extensions.course_list
+# jupyter server extension enable nbgrader.server_extensions.validate_assignment
+
+# jupyter server extension enable --sys-prefix --py nbgrader.server_extensions.formgrader
+# jupyter server extension enable --sys-prefix --py nbgrader.server_extensions.assignment_list
+# jupyter server extension enable --sys-prefix --py nbgrader.server_extensions.course_list
+# jupyter server extension enable --sys-prefix --py nbgrader.server_extensions.validate_assignment
+
+# jupyter labextension enable --level=sys_prefix nbgrader/formgrader
+# jupyter labextension enable --level=sys_prefix nbgrader/assignment-list
+# jupyter labextension enable --level=sys_prefix nbgrader/course-list
+# jupyter labextension enable --level=sys_prefix nbgrader/create-assignment
+# jupyter labextension enable --level=sys_prefix nbgrader/validate-assignment
+
+# jupyter labextension enable nbgrader/formgrader
+# jupyter labextension enable nbgrader/assignment-list
+# jupyter labextension enable nbgrader/course-list
+# jupyter labextension enable nbgrader/create-assignment
+# jupyter labextension enable nbgrader/validate-assignment
+
+#jupyter nbextension install --sys-prefix --py nbgrader --overwrite
+#jupyter nbextension enable --sys-prefix --py nbgrader
+#jupyter serverextension enable --sys-prefix --py nbgrader
+
+#jupyter nbextension install --overwrite --py nbtutor
+#jupyter nbextension enable --py nbtutor
 
 # Notebooks w/ extensions that auto-run code must be "trusted" to work the first time
 #jupyter trust 04-Optimization/04-Introduction-Optimization.ipynb
+
+
+########################################
+# report
+jupyter labextension list
+jupyter server extension list
+jupyter nbextension list
