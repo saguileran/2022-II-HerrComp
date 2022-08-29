@@ -1,5 +1,5 @@
-#jupyter contrib nbextension install # --user
-jupyter contrib nbextension install --sys-prefix
+jupyter contrib nbextension install --user
+#jupyter contrib nbextension install --sys-prefix
 jupyter nbextension enable --py widgetsnbextension
 jupyter nbextension enable python-markdown/main
 jupyter nbextension enable rise/main
@@ -19,9 +19,12 @@ jupyter nbextension enable spellchecker/main
 # nbgrader
 # pip install nbgrader
 
-jupyter labextension enable --level=sys_prefix nbgrader
-jupyter server extension enable --sys-prefix --py nbgrader
-jupyter contrib nbextension install --sys-prefix
+jupyter labextension enable --level=user nbgrader
+jupyter server extension enable --user --py nbgrader
+
+# jupyter labextension enable --level=sys_prefix nbgrader
+# jupyter server extension enable --sys-prefix --py nbgrader
+# jupyter contrib nbextension install --sys-prefix
 
 # jupyter server extension enable nbgrader.server_extensions.formgrader
 # jupyter server extension enable nbgrader.server_extensions.assignment_list

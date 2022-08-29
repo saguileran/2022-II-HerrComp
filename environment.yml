@@ -1,4 +1,4 @@
-name: herrcomp2
+name: herrcomp
 channels:
   - conda-forge
 dependencies:
@@ -8,6 +8,8 @@ dependencies:
   - scipy
   - seaborn
   - jupyter
+  - notebook==6.4.0
+#  - notebook==5.7.10
  # - superlu_dist=6.2.0
   - rise
   - jupyterlab-lsp
@@ -29,3 +31,4 @@ dependencies:
   - pip:
     - nbgrader
     - tutormagic
+#    - notebook==6.4.0
