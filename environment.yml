@@ -20,7 +20,7 @@ dependencies:
   - pandas
 #  - pulp
 #  - bokeh
-#  - ipyvolume
+  - ipyvolume
 #  - plotly
   - vpython
   - jupyterlab-vpython
