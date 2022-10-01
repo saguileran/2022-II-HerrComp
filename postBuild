@@ -19,6 +19,9 @@ jupyter labextension install @jupyter-widgets/jupyterlab-manager
 jupyter labextension install ipyvolume
 jupyter labextension install jupyter-threejs
 
+#ploty
+# renderer support
+jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyterlab-plotly
 ########################################
 # nbgrader
 # pip install nbgrader
